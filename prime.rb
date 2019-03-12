@@ -3,5 +3,5 @@
 def prime?(num)
   if num >= 2 
     (2..num - 1).all? do |i|
-      num % 
+      num % i != 0
 end
