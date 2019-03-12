@@ -1,11 +1,11 @@
 # Add  code here!
 
-def prime?(n)
-  return false if n < 2 
-  return true if n == 2 
-    if (2...n-1).any?{|i| n % i == 0}
-      false
-    else
-      true
+def prime?(number)
+  if number >= 2
+    (2..number - 1).all? do |x|
+      number % x != 0
     end
+  else
+    return false
+  end
 end
